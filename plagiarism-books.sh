@@ -97,9 +97,9 @@ python csv2latexPdf.py
 
 rm -rf bookInfo.csv
 
-mv referenceBooks.pdf /home/irashadul/Documents/documentationStatistics/
+#mv referenceBooks.pdf /home/irashadul/Documents/documentationStatistics/
 
-cd /home/irashadul/Documents/documentationStatistics/
+#cd /home/irashadul/Documents/documentationStatistics/
 
 #similarity checker
 ###################################################
