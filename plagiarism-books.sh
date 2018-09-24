@@ -90,7 +90,7 @@ rm -rf data.json a.csv a1.csv books-*.csv
   #cat plagiarismURL.txt |sort | uniq -u >> refreshedURL.txt
 #done <"sentence1.txt" 
 
-cat book1.txt book2.txt book3.txt > bookReferenced.txt
+#cat book1.txt book2.txt book3.txt > bookReferenced.txt
 #part C : details of the books
 
 python csv2latexPdf.py
@@ -146,6 +146,6 @@ rm -rf bookInfo.csv
 #  done <"op.txt"
 
 
-rm -rf text11.txt sentence1.txt aa1.txt b1.txt c1.txt output1.txt text2.txt plagiarismURL11.txt plagiarismURL1.txt text2.txt preFinal.txt plagiarismURLX.txt book1.txt book2.txt book3.txt   
+rm -rf text11.txt sentence1.txt aa1.txt b1.txt c1.txt output1.txt text2.txt plagiarismURL11.txt plagiarismURL1.txt text2.txt preFinal.txt plagiarismURLX.txt book1.txt book2.txt book3.txt sentence.txt 
 
 

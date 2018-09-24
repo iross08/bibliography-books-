@@ -33,7 +33,7 @@ column2 = [(2, 0), (2, -1)]
 column3 = [(3, 0), (3, -1)]
 column4 = [(4, 0), (4, -1)]
 column5 = [(5, 0), (5, -1)]
-#column6 = [(6, 0), (6, -1)]
+column6 = [(6, 0), (6, -1)]
 table_style = TableStyle([
     ('VALIGN', all_cells[0], all_cells[1], 'TOP'),
     ('LINEBELOW', header[0], header[1], 1, colors.black),
@@ -42,8 +42,8 @@ table_style = TableStyle([
     ('ALIGN', column2[0], column2[1], 'LEFT'),
     ('ALIGN', column3[0], column3[1], 'LEFT'),
     ('ALIGN', column4[0], column4[1], 'LEFT'),
-    ('ALIGN', column5[0], column5[1], 'LEFT'),
-    #('ALIGN', column6[0], column6[1], 'LEFT'),
+    ('ALIGN', column5[0], column5[1], 'CENTER'),
+    ('ALIGN', column6[0], column6[1], 'LEFT'),
     #('ALIGN', column4[0], column4[1], 'LEFT'),
     #('ALIGN', column5[0], column5[1], 'LEFT'),
     #('ALIGN', column6[0], column6[1], 'LEFT'),
@@ -51,13 +51,13 @@ table_style = TableStyle([
 
 # PDF Table - Column Widths
 colWidths = [
-    2.5 * cm,  # Column 1
-    4.1 * cm,  # Column 2
-    4.1 * cm,  # Column 3
-    4.1 * cm,  # Column 4
-    4.1 * cm,  # Column 5
-    5.1 * cm,  # Column 6
-    #3 * cm,  # Column 7
+    .5 * cm,  # Column 1
+    3 * cm,  # Column 2
+    5 * cm,  # Column 3
+    3 * cm,  # Column 4
+    3 * cm,  # Column 5
+    2 * cm,  # Column 6
+    3 * cm,  # Column 7
     #2.1 * cm,  # Column 8
     #2.5 * cm,  # Column 9
     #2 * cm,  # Column 10
@@ -70,6 +70,7 @@ for index, row in enumerate(data):
             data[index][col] = val.strip("'[]()")
         else:
             data[index][col] = Paragraph(val, styles['Normal'])
+
 
 # Add table to elements
 t = Table(data, colWidths=colWidths)

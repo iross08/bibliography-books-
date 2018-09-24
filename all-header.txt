@@ -1,0 +1,11 @@
+items_volumeInfo_title
+items_volumeInfo_publisher
+items_volumeInfo_authors_0  
+items_volumeInfo_authors_1 
+items_volumeInfo_authors_2 
+items_volumeInfo_authors_3 
+items_volumeInfo_publishedDate 
+items_volumeInfo_pageCount
+items_volumeInfo_industryIdentifiers_0_identifier
+items_volumeInfo_categories_0
+items_volumeInfo_description
